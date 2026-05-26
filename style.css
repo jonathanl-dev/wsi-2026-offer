@@ -461,9 +461,20 @@ small {
 .video-card video {
   width: 100%;
   display: block;
-  aspect-ratio: 9 / 16;
-  object-fit: cover;
+  max-height: 720px;
   background: #000;
+  border-bottom: 1px solid #e7e7ee;
+}
+
+.video-card--vertical video {
+  aspect-ratio: 9 / 16;
+  object-fit: contain;
+  max-height: 680px;
+}
+
+.video-card--horizontal video {
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
 }
 
 .video-copy {
